@@ -1,6 +1,9 @@
 - name: check service manager for systemd
   stat:
-    path: /usr/lib/systemd
+    # For some reason this produces the wron result on Ubuntu 14.04
+    #   path: /usr/lib/systemd
+    # so temporarily disable it
+    path: /usr/lib/systemd-disregard
   register: systemdPath
   ignore_errors: True
 
