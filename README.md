@@ -5,9 +5,9 @@
 The three prerequisites, which are available on Mac, Windows, and Linux 
 are (we have tested with the versions below, but other versions may be fine too):
 
-1. [VirtualBox 4.3.20](https://www.virtualbox.org/wiki/Downloads)
-2. [Vagrant 1.7.1](http://www.vagrantup.com/downloads)
-3. [Ansible 1.8.2](http://docs.ansible.com/intro_installation.html)
+1. [VirtualBox 6.1.16](https://www.virtualbox.org/wiki/Downloads)
+2. [Vagrant 2.2.14](http://www.vagrantup.com/downloads)
+3. [Ansible 1.9.6](http://docs.ansible.com/intro_installation.html)
 
 *Note:* Ansible is not supported on Windows. If you want to build a SMART on FHIR VM on Windows,
 please use the version of the installer in the "ansible-guest" branch which runs Ansible on the 
@@ -24,7 +24,7 @@ repository.
 *Note:* The Ansible requirement is a Python package that installs some console tools. The latest version will not work. If you have the *pip* Python package manager installed, the easiest way to install the correct version of Ansible is to run the following:
 
 ```
-sudo pip install ansible==1.8.2
+sudo pip install ansible==1.9.6
 ```
 
 Once you have the prerequisites installed on your machine, you can:
@@ -67,7 +67,7 @@ vagrant halt
 ```
 sudo apt-get update
 sudo apt-get install curl git python-pycurl python-pip python-yaml python-paramiko python-jinja2
-sudo pip install ansible==1.8.2
+sudo pip install ansible==1.9.6
 git clone https://github.com/smart-on-fhir/installer
 cd installer/provisioning
 ```

@@ -9,8 +9,8 @@ docs_server_host: localhost
 #use_custom_ssl_certificates: false
 #custom_ssl_certificates_path: /example/local/path
 fhir_server_branch: v0.1.2
-auth_server_branch: f0.1.0
-auth_ldap_server_branch: f0.1.0
+auth_server_branch: f0.1.1
+auth_ldap_server_branch: f0.1.1
 sample_patients_branch: v0.1.0
 fhir_starter_branch: v0.1.2
 cardiac_risk_branch: v0.1.0

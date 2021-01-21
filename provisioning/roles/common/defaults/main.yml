@@ -23,8 +23,8 @@ update_repositories: yes
 
 # Settigs for Jetty and Oracle Java. You probably won't have to alter these
 # unles you are switching to a different version of Jetty or Java
-jetty_download_url: "http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-runner/9.1.0.M0/jetty-runner-9.1.0.M0.jar"
-java_home_dir: "/usr/lib/jvm/java-7-oracle"
+jetty_download_url: "https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-runner/9.1.0.M0/jetty-runner-9.1.0.M0.jar"
+java_home_dir: "/usr/lib/jvm/java-8-oracle"
 
 # Database user configuration (used by the SMART-on-FHIR server)
 postgres_user: "fhir"
@@ -53,7 +53,7 @@ fhir_server_host: "localhost"
 fhir_server_port: 9080
 fhir_server_client: client
 fhir_server_password: secret
-fhir_server_repo: "https://github.com/smart-on-fhir/api-server.git"
+fhir_server_repo: "https://github.com/nschwertner/api-server.git"
 fhir_server_branch: "master"
 fhir_server_name: "Local FHIR dev server"
 
@@ -71,11 +71,11 @@ fhir_server_preserve_db: false
 app_server_secure_http: false
 app_server_host: "localhost"
 app_server_port: 9090
-fhir_starter_repo: "https://github.com/smart-on-fhir/fhir-starter.git"
-cardiac_risk_repo: "https://github.com/smart-on-fhir/cardiac-risk-app.git"
-bp_centiles_repo: "https://github.com/smart-on-fhir/bp-centiles-app.git"
-growth_chart_repo: "https://github.com/smart-on-fhir/growth-chart-app.git"
-fhir_demo_app_repo: "https://github.com/smart-on-fhir/fhir-demo-app.git"
+fhir_starter_repo: "https://github.com/nschwertner/fhir-starter.git"
+cardiac_risk_repo: "https://github.com/nschwertner/cardiac-risk-app.git"
+bp_centiles_repo: "https://github.com/nschwertner/bp-centiles-app.git"
+growth_chart_repo: "https://github.com/nschwertner/growth-chart-app.git"
+fhir_demo_app_repo: "https://github.com/nschwertner/fhir-demo-app.git"
 fhir_starter_branch: "master"
 cardiac_risk_branch: "master"
 bp_centiles_branch: "master"
@@ -95,9 +95,9 @@ auth_server_host: "localhost"
 auth_server_port: 9085
 auth_server_client: client
 auth_server_password: secret
-auth_server_repo: "https://github.com/smart-on-fhir/auth-server.git"
+auth_server_repo: "https://github.com/nschwertner/auth-server.git"
 auth_server_branch: "smart-launch"
-auth_ldap_server_repo: "https://github.com/smart-on-fhir/auth-server-ldap.git"
+auth_ldap_server_repo: "https://github.com/nschwertner/auth-server-ldap.git"
 auth_ldap_server_branch: "smart-launch"
 auth_server_war: auth-server-ldap/ldap-server-overlay/target/ldap-openid-connect-server.war
 auth_server_data_context: "{{install_dir}}/auth-server/openid-connect-server-webapp/src/main/webapp/WEB-INF/data-context.xml"
@@ -113,7 +113,7 @@ ldap_server_uri: "ldap://{{ldap_server_host}}:389"
 ldap_server_tls: false
 
 # General settings for the sample patients set
-sample_patients_repo: "https://github.com/smart-on-fhir/sample-patients.git"
+sample_patients_repo: "https://github.com/nschwertner/sample-patients.git"
 sample_patients_branch: "master"
 
 # choose how many sample patients to load in the server or set to 9999 for all of them

@@ -48,7 +48,7 @@
 - name: add PPA repos
   tags: [general]
   apt_repository: repo={{item}}
-  with_items: ['ppa:webupd8team/java','ppa:nginx/stable']
+  with_items: ['ppa:ts.sch.gr/ppa','ppa:nginx/stable']
 
 - name: update aptitude cache (just in case)
   tags: [general]
@@ -64,7 +64,7 @@
 
 - name: install Oracle Java
   tags: [general]
-  apt: pkg=oracle-java7-installer
+  apt: pkg=oracle-java8-installer
 
 - name: set global JAVA_HOME
   tags: [general]
